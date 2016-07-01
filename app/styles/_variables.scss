@@ -1,7 +1,19 @@
 //main color palette
-$sea-foam: #71C4A1;
-$salmon: #FF7272;
-$grey-blue: #A9BBCC;
-$soft-yellow: #FFDF44;
-$pastel-pink: #FFBFBF;
-$default-lt-grey: #e5e5e5;
+  $sea-foam: #71C4A1;
+  $salmon: #FF7272;
+  $grey-blue: #A9BBCC;
+  $soft-yellow: #FFDF44;
+  $pastel-pink: #FFBFBF;
+  $default-lt-grey: #e5e5e5;
+
+//custom fonts defined
+$heading-font:'Pacifico', serif;
+$content-font: 'Source Sans Pro', sans-serif;
+
+//mixin to create round almost cicrcular borders
+@mixin exround-radius (){
+  -webkit-border-radius: 30px;
+  -moz-border-radius:    30px;
+  -ms-border-radius:     30px;
+  border-radius:         30px;
+}

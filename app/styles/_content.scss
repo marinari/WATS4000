@@ -1,4 +1,5 @@
 
+//default styles for old browsers
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,6 +11,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: $content-font;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -72,9 +74,17 @@ body {
     padding: 14px 24px;
     background-color: $salmon;
     color: $default-lt-grey;
+
+    &:hover {
+      background-color: $sea-foam;
+    }
+  }
+  .btn-lg {
+    @include exround-radius;
   }
   h1 {
       color: $sea-foam;
+      font-family: $heading-font;
   }
 }
 
@@ -83,6 +93,11 @@ body {
   margin: 40px 0;
     a {
       color: $pastel-pink;
+      font-weight: 600;
+    }
+    a:hover {
+      color: $soft-yellow;
+      text-decoration: none;
     }
   p + h4 {
     margin-top: 28px;
